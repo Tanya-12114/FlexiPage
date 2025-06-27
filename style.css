@@ -1,0 +1,222 @@
+/* Base Typography & Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f9fafb;
+    color: #111827;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    position: relative;
+    background: #4f46e5;
+    color: white;
+    padding: 16px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo i {
+    font-size: 1.2em;
+}
+
+/* Default: hide navbar on mobile */
+#navbar {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    font-size: 24px;
+    border: none;
+    color: white;
+    z-index: 1001; 
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #6366f1, #4f46e5);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    background: white;
+    color: #4f46e5;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e0e7ff;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    color: white;
+    padding: 30px 24px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Gradient backgrounds for feature cards */
+.feature-card:nth-child(1) {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+}
+
+.feature-card:nth-child(2) {
+    background: linear-gradient(135deg, #065f46, #059669);
+}
+
+.feature-card:nth-child(3) {
+    background: linear-gradient(135deg, #b45309, #f59e0b);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.feature-card h3 {
+    margin: 8px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background: linear-gradient(to right, #111827, #1f2937);
+    color: #d1d5db;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 12px;
+    color: #eef0f3;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #bebec2;
+}
