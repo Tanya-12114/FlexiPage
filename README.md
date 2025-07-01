@@ -3,6 +3,11 @@
 A fully responsive and modern landing page built with **HTML5** and **CSS3**. This project showcases clean layout design, mobile responsiveness, reusable components, and smooth hover effects — perfect for portfolios, startups, or personal branding.
 
 ---
+## Live Website
+
+Click below to view the site:
+
+👉 [https://tanya-12114.github.io/FlexiPage/](https://tanya-12114.github.io/FlexiPage/)
 
 ## Features
 
